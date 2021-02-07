@@ -1,6 +1,6 @@
 import UIKit
 
-class SignInViewController: UIViewController {
+class SignInViewController: BaseViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -10,6 +10,7 @@ class SignInViewController: UIViewController {
 
 
     // MARK: - Method
+    
     func callSignUpController() {
         let vc:SignUpViewController = SignUpViewController(nibName: "SignUpViewController", bundle: nil)
         self.present(vc, animated: true, completion: nil)
@@ -19,7 +20,7 @@ class SignInViewController: UIViewController {
     // MARK: - Actions
     
     @IBAction func onSignIn(_ sender: Any) {
-    
+        sceneDelegate().callHomeViewController()
     }
     
     @IBAction func onSugnUp(_ sender: Any) {

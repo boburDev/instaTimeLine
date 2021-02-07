@@ -20,6 +20,16 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
         guard let _ = (scene as? UIWindowScene) else { return }
     }
     
+    func callHomeViewController() {
+        let vc:HomeViewController = HomeViewController(nibName: "HomeViewController", bundle: nil)
+        let nc = UINavigationController(rootViewController: vc)
+        if self.window == nil {
+            self.window = UIWindow(frame: UIScreen.main.bounds)
+        }
+        self.window?.rootViewController = nc
+        self.window?.makeKeyAndVisible()
+    }
+    
     func callSignInController() {
         let vc:SignInViewController = SignInViewController(nibName: "SignInViewController", bundle: nil)
              

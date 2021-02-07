@@ -1,13 +1,6 @@
-//
-//  SignUpViewController.swift
-//  instaTimeLine
-//
-//  Created by Boburmirzo on 2/7/21.
-//
-
 import UIKit
 
-class SignUpViewController: UIViewController {
+class SignUpViewController: BaseViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -25,11 +18,11 @@ class SignUpViewController: UIViewController {
     }
     
 
-    
     // MARK: - Action
     
     
     @IBAction func onSignUp(_ sender: Any) {
+        sceneDelegate().callHomeViewController()
     }
     
     @IBAction func onSignIn(_ sender: Any) {
