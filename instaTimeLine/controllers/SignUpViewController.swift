@@ -18,6 +18,12 @@ class SignUpViewController: UIViewController {
 
 
     // MARK: - Method
+    
+    func callSignInController() {
+        let vc:SignInViewController = SignInViewController(nibName: "SignInViewController", bundle: nil)
+        self.present(vc, animated: true, completion: nil)
+    }
+    
 
     
     // MARK: - Action
@@ -27,6 +33,6 @@ class SignUpViewController: UIViewController {
     }
     
     @IBAction func onSignIn(_ sender: Any) {
-        
+        callSignInController()
     }
 }

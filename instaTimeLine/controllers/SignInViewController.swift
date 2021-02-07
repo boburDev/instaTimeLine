@@ -10,7 +10,10 @@ class SignInViewController: UIViewController {
 
 
     // MARK: - Method
-
+    func callSignUpController() {
+        let vc:SignUpViewController = SignUpViewController(nibName: "SignUpViewController", bundle: nil)
+        self.present(vc, animated: true, completion: nil)
+    }
     
 
     // MARK: - Actions
@@ -20,7 +23,7 @@ class SignInViewController: UIViewController {
     }
     
     @IBAction func onSugnUp(_ sender: Any) {
-    
+        callSignUpController()
     }
     
 }
