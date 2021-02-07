@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		959E38F325CFAD2700F5625F /* SignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 959E38F125CFAD2700F5625F /* SignUpViewController.swift */; };
+		959E38F425CFAD2700F5625F /* SignUpViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 959E38F225CFAD2700F5625F /* SignUpViewController.xib */; };
 		95D1CFD925CFA8B0003F7A63 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95D1CFD825CFA8B0003F7A63 /* AppDelegate.swift */; };
 		95D1CFDB25CFA8B0003F7A63 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95D1CFDA25CFA8B0003F7A63 /* SceneDelegate.swift */; };
 		95D1CFE025CFA8B0003F7A63 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 95D1CFDE25CFA8B0003F7A63 /* Main.storyboard */; };
@@ -18,6 +20,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		959E38F125CFAD2700F5625F /* SignUpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpViewController.swift; sourceTree = "<group>"; };
+		959E38F225CFAD2700F5625F /* SignUpViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SignUpViewController.xib; sourceTree = "<group>"; };
 		95D1CFD525CFA8B0003F7A63 /* instaTimeLine.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = instaTimeLine.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		95D1CFD825CFA8B0003F7A63 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		95D1CFDA25CFA8B0003F7A63 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -85,6 +89,8 @@
 			children = (
 				95D1CFF425CFA8F2003F7A63 /* SignInViewController.swift */,
 				95D1CFF525CFA8F2003F7A63 /* SignInViewController.xib */,
+				959E38F125CFAD2700F5625F /* SignUpViewController.swift */,
+				959E38F225CFAD2700F5625F /* SignUpViewController.xib */,
 			);
 			path = controllers;
 			sourceTree = "<group>";
@@ -146,6 +152,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				959E38F425CFAD2700F5625F /* SignUpViewController.xib in Resources */,
 				95D1CFF725CFA8F2003F7A63 /* SignInViewController.xib in Resources */,
 				95D1CFE825CFA8B1003F7A63 /* LaunchScreen.storyboard in Resources */,
 				95D1CFE525CFA8B1003F7A63 /* Assets.xcassets in Resources */,
@@ -164,6 +171,7 @@
 				95D1CFE325CFA8B0003F7A63 /* instaTimeLine.xcdatamodeld in Sources */,
 				95D1CFD925CFA8B0003F7A63 /* AppDelegate.swift in Sources */,
 				95D1CFDB25CFA8B0003F7A63 /* SceneDelegate.swift in Sources */,
+				959E38F325CFAD2700F5625F /* SignUpViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -14,4 +14,13 @@ class SignInViewController: UIViewController {
     
 
     // MARK: - Actions
+    
+    @IBAction func onSignIn(_ sender: Any) {
+    
+    }
+    
+    @IBAction func onSugnUp(_ sender: Any) {
+    
+    }
+    
 }

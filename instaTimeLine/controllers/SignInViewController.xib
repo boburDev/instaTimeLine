@@ -57,6 +57,9 @@
                             <state key="normal" title="Sign In">
                                 <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                             </state>
+                            <connections>
+                                <action selector="onSignIn:" destination="-1" eventType="touchUpInside" id="jUk-ct-ABP"/>
+                            </connections>
                         </button>
                         <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="lOX-yc-Imf">
                             <rect key="frame" x="74.5" y="277" width="225" height="27"/>
@@ -73,6 +76,9 @@
                                     <state key="normal" title="Sign Up">
                                         <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                     </state>
+                                    <connections>
+                                        <action selector="onSugnUp:" destination="-1" eventType="touchUpInside" id="vNt-xX-7Fa"/>
+                                    </connections>
                                 </button>
                             </subviews>
                         </stackView>
