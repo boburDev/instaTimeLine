@@ -3,6 +3,7 @@ import UIKit
 class HomeViewController: BaseViewController, UITableViewDelegate, UITableViewDataSource {
     
     @IBOutlet weak var tableHomeView: UITableView!
+    var postItems: Array<Post> = Array()
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -20,6 +21,9 @@ class HomeViewController: BaseViewController, UITableViewDelegate, UITableViewDa
         
         
         setNavigationBar()
+        
+        postItems.append(Post(fullname: "Bobur", user_img: "im_man", post_img: "im_post-one"))
+        postItems.append(Post(fullname: "Lola", user_img: "im_woman", post_img: "im_post-two"))
     }
     
     func setNavigationBar() {
@@ -47,10 +51,22 @@ class HomeViewController: BaseViewController, UITableViewDelegate, UITableViewDa
     // MARK: - Table View
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        <#code#>
+        return postItems.count
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        <#code#>
+//        let post = postItems[indexPath.row]
+        
+        let cell = Bundle.main.loadNibNamed("PostTableViewCell", owner: self, options: nil)?.first as! PostTableViewCell
+        
+//        cell.username.text = post.fullname
+//        cell.user_img.image = UIImage(named: post.user_img)
+//        cell.post_img.image = UIImage(named: post.post_img)
+        
+        return cell
+    }
+    
+    func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
+        return 200
     }
 }
