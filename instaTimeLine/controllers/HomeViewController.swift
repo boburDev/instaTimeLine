@@ -19,11 +19,11 @@ class HomeViewController: BaseViewController, UITableViewDelegate, UITableViewDa
         tableHomeView.dataSource = self
         tableHomeView.delegate = self
         
-        
         setNavigationBar()
         
-        postItems.append(Post(fullname: "Bobur", user_img: "im_man", post_img: "im_post-one"))
-        postItems.append(Post(fullname: "Lola", user_img: "im_woman", post_img: "im_post-two"))
+        postItems.append(Post(fullname: "Bobur", user_img: "im_man", post_img1: "im_post-one", post_img2: "im_post-two"))
+        postItems.append(Post(fullname: "Lola", user_img: "im_woman", post_img1: "im_post-two", post_img2: "im_post-one"))
+
     }
     
     func setNavigationBar() {
@@ -61,7 +61,8 @@ class HomeViewController: BaseViewController, UITableViewDelegate, UITableViewDa
         
         cell.username.text = post.fullname
         cell.user_img.image = UIImage(named: post.user_img)
-        cell.post_img.image = UIImage(named: post.post_img)
+        cell.post_img1.image = UIImage(named: post.post_img1)
+        cell.post_img2.image = UIImage(named: post.post_img2)
         
         return cell
     }
