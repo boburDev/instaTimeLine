@@ -55,18 +55,18 @@ class HomeViewController: BaseViewController, UITableViewDelegate, UITableViewDa
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-//        let post = postItems[indexPath.row]
+        let post = postItems[indexPath.row]
         
         let cell = Bundle.main.loadNibNamed("PostTableViewCell", owner: self, options: nil)?.first as! PostTableViewCell
         
-//        cell.username.text = post.fullname
-//        cell.user_img.image = UIImage(named: post.user_img)
-//        cell.post_img.image = UIImage(named: post.post_img)
+        cell.username.text = post.fullname
+        cell.user_img.image = UIImage(named: post.user_img)
+        cell.post_img.image = UIImage(named: post.post_img)
         
         return cell
     }
     
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
-        return 200
+        return 500
     }
 }

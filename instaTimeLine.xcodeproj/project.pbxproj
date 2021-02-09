@@ -13,7 +13,6 @@
 		959E38FC25CFB20A00F5625F /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 959E38FA25CFB20A00F5625F /* HomeViewController.swift */; };
 		959E38FD25CFB20A00F5625F /* HomeViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 959E38FB25CFB20A00F5625F /* HomeViewController.xib */; };
 		95C6558125D18BDC00E0F508 /* Post.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95C6558025D18BDC00E0F508 /* Post.swift */; };
-		95C6558825D18F2D00E0F508 /* PostTableViewCell1.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95C6558625D18F2D00E0F508 /* PostTableViewCell1.swift */; };
 		95C6558925D18F2D00E0F508 /* PostTableViewCell1.xib in Resources */ = {isa = PBXBuildFile; fileRef = 95C6558725D18F2D00E0F508 /* PostTableViewCell1.xib */; };
 		95C6559A25D1998F00E0F508 /* PostTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95C6559825D1998F00E0F508 /* PostTableViewCell.swift */; };
 		95C6559B25D1998F00E0F508 /* PostTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 95C6559925D1998F00E0F508 /* PostTableViewCell.xib */; };
@@ -34,7 +33,6 @@
 		959E38FA25CFB20A00F5625F /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		959E38FB25CFB20A00F5625F /* HomeViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HomeViewController.xib; sourceTree = "<group>"; };
 		95C6558025D18BDC00E0F508 /* Post.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Post.swift; sourceTree = "<group>"; };
-		95C6558625D18F2D00E0F508 /* PostTableViewCell1.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostTableViewCell1.swift; sourceTree = "<group>"; };
 		95C6558725D18F2D00E0F508 /* PostTableViewCell1.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PostTableViewCell1.xib; sourceTree = "<group>"; };
 		95C6559825D1998F00E0F508 /* PostTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostTableViewCell.swift; sourceTree = "<group>"; };
 		95C6559925D1998F00E0F508 /* PostTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PostTableViewCell.xib; sourceTree = "<group>"; };
@@ -72,7 +70,6 @@
 		95C6558525D18EDA00E0F508 /* cell */ = {
 			isa = PBXGroup;
 			children = (
-				95C6558625D18F2D00E0F508 /* PostTableViewCell1.swift */,
 				95C6558725D18F2D00E0F508 /* PostTableViewCell1.xib */,
 				95C6559825D1998F00E0F508 /* PostTableViewCell.swift */,
 				95C6559925D1998F00E0F508 /* PostTableViewCell.xib */,
@@ -219,7 +216,6 @@
 				959E38FC25CFB20A00F5625F /* HomeViewController.swift in Sources */,
 				95C6559A25D1998F00E0F508 /* PostTableViewCell.swift in Sources */,
 				959E38F725CFB0EB00F5625F /* BaseViewController.swift in Sources */,
-				95C6558825D18F2D00E0F508 /* PostTableViewCell1.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
